@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rappel Tesla</title>
+</head>
+<body style="font-family:-apple-system,sans-serif;text-align:center;padding:48px 16px">
+<p>Retour vers l'app Rappel Tesla…</p>
+<p><a id="lien" href="#" style="font-size:18px">Toucher ici si rien ne se passe</a></p>
+<script>
+  var cible = "teslarappel://callback" + window.location.search;
+  document.getElementById("lien").href = cible;
+  window.location.replace(cible);
+</script>
+</body>
+</html>
